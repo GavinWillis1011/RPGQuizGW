@@ -3,55 +3,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
-    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+
+    <title>RPG Class Personality Quiz</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/ideas.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-        <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
+
+    <h1 class="text-center mt-4">What RPG Class Are You?</h1>
+    <p class="text-center">Discover your role in the adventuring party!</p>
+
+    <!-- Question 1 -->
+    <div class="container d-flex justify-content-center">
+        <div class="card my-4 p-4 question-block" id="question-1" style="width: 75%;">
+            <h4 class="mb-3">1. How do you prepare for a difficult challenge?</h4>
+
+            <div class="row g-2">
+                <div class="col-6">
+                    <button class="btn btn-outline-primary w-100 answer-btn"
+                        data-warrior="2" data-mage="0" data-rogue="0" data-priest="0">
+                        Train until I'm ready.
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button class="btn btn-outline-primary w-100 answer-btn"
+                        data-warrior="0" data-mage="2" data-rogue="0" data-priest="0">
+                        Research everything I can.
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button class="btn btn-outline-primary w-100 answer-btn"
+                        data-warrior="0" data-mage="0" data-rogue="2" data-priest="0">
+                        Find a clever workaround.
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button class="btn btn-outline-primary w-100 answer-btn"
+                        data-warrior="0" data-mage="0" data-rogue="0" data-priest="2">
+                        Prepare to protect others.
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     
-    
-    <!-- End quiz element -->
-
-    <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
-      </div>
-    </div>
-    
-    <!-- Connect to your script file here -->
-     <script src = "./js/script.js"></script>
-</body>
-</html>
